@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkgray:#333333;
+    --midgray:#444444; 
+    --gray:#5A5A5A;
+    --ligthgray:#CCCCCC;
+    --almostwhite:#eeeeee;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    background-color:var(--darkgray);
+    height: 15vh;
+    color: aliceblue;
+}
+
+.logo_tittle_container {
+    height: 70%;
+}
+
+.logo_tittle_container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+}
+
+.logo_tittle_container h1 {
+    display: inline-block;
+    margin-top: 1rem;
+    color:aliceblue;
+}
+
+nav {
+    height: 30%;
+    background-color: var(--midgray);
+}
+
+nav ul{
+    width: 30%;
+    margin-left: 35%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0.5em 1em ;
+}
+
+a{
+    color:aliceblue;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--ligthgray);
+}
+
+/* MAIN */
+
+main{
+
+}
+/* BANNER */
+
+.banner{
+    background-color: var(--gray);
+    color: aliceblue;   
+    height: 10em;
+    text-align: center;
+}
+
+.banner h2{
+    padding-top:2em;
+    margin-bottom: 0.5em;
+}
+
+/* PRODUCTS */
+
+.featured_products{
+    text-align: center;
+    color: var(--darkgray);
+}
+.featured_products h2{
+    padding-top: 2em;
+    height: 5em;
+    
+}
+
+.product_card{
+    display: inline-block;
+    height: 22em;
+    width: 25em;
+    border: 0.5px solid var(--ligthgray);
+    padding: 1em;
+    margin: 0 1em;
+    background-color: var(--almostwhite);
+}
+
+.product_card img,h3,p,a{
+    display: block;
+}
+
+.product_card img{
+    margin-left: 7em;
+}
+
+.product_card h3{
+    padding-top: 1em;
+}
+
+.product_card p{
+    color: var(--gray);
+    padding-top: 1em;
+}
+
+.product_card_price{
+    font-weight: bold;
+    color: var(--darkgray) !important;
+}
+
+.product_card a{
+    padding: 0.5em;
+    width: 30%;
+    background-color: var(--darkgray);
+    color:aliceblue;
+    margin-top: 0.5em;
+    margin-left: 8em;
+}
+.product_card a:hover{
+    background-color: var(--gray);
+}
+
+
+
+/* CATEGORIES */
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--midgray);
+    color: aliceblue;
+    text-align: center;
+    height: 10vh;
+}
+
+footer p{
+    padding-top: 1.5em;
+}
