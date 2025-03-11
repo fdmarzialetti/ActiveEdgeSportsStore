@@ -36,6 +36,8 @@ header {
     display: inline-block;
     margin-top: 1rem;
     color:aliceblue;
+    font-style: oblique;
+    text-transform: uppercase;
 }
 
 nav {
@@ -62,12 +64,12 @@ nav a:hover{
     color: var(--ligthgray);
 }
 
-/* MAIN */
+/* MAIN INDEX*/
 
 main{
 
 }
-/* BANNER */
+/* BANNER INDEX*/
 
 .banner{
     background-color: var(--gray);
@@ -95,7 +97,7 @@ main{
 
 .product_card{
     display: inline-block;
-    height: 22em;
+    height: 24em;
     width: 25em;
     border: 0.5px solid var(--ligthgray);
     padding: 1em;
@@ -109,6 +111,7 @@ main{
 
 .product_card img{
     margin-left: 7em;
+    border: 1px solid var(--almostwhite);
 }
 
 .product_card h3{
@@ -137,8 +140,6 @@ main{
     background-color: var(--gray);
 }
 
-
-
 /* CATEGORIES */
 
 .categories{
@@ -156,21 +157,21 @@ main{
     display: inline-block;
     height: 18em;
     width: 18em;
-    border: 1px solid var(--darkgray);
-    margin: 0 3em;
+    margin: 0 4em;
 }
 
 .categories img{
     width: 100%;
     height: 100%;
     object-fit:cover;
+    border: 1px solid var(--ligthgray);
 }
 
 .categories h3{
     margin-top: 1em;
 }
 
-/* FOOTER */
+/* FOOTER*/
 
 footer {
     background-color: var(--midgray);
@@ -181,4 +182,98 @@ footer {
 
 footer p{
     padding-top: 1.5em;
+}
+
+/*ABOUT US SECTION*/
+
+.about_us{
+    border-bottom: 1px solid var(--ligthgray);
+    height: 28rem;
+    width: 90%;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 4em;
+    color: var(--darkgray);
+}
+
+.about_us h2{
+    margin: 2em;
+}
+
+.about_us h3,p{
+    margin-top: 1em;
+}
+
+.about_us p{
+    text-align: left;
+}
+
+/* TEAM SECTION */
+
+.team{
+    margin-top:3em;
+    margin-left: 4em;
+    width: 90%;
+    color: var(--darkgray);
+    text-align: center;
+    height: 35em;
+    border-bottom: 1px solid var(--ligthgray);
+}
+
+.team h2{
+    margin: 1em;
+}
+
+.team_member_container{
+    display: inline-block;
+    width: 22em;
+    height: 30em;
+    margin: 1em;
+}
+
+.team_member_container h3{
+    font-weight: bolder;
+}
+
+.team_member_container h4{
+    font-weight:bold;
+    margin-top: 0.2em;
+}
+
+.team_member_container p{
+    width: 100%;
+    text-align:justify;
+}
+
+.team_member_container img{
+    margin: 1em 0;
+    border-radius: 100%;
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border: 2px solid var(--almostwhite);
+}
+
+/* OUR VALUES */
+
+.values{
+    height: 30em;
+    width: 90%;
+    text-align: center;
+    margin-left: 4em;
+    color: var(--darkgray);
+}
+
+.values h2{
+    margin-top: 2em;
+}
+
+.values h3{
+    margin-top: 3em;
+}
+
+.values p{
+    width: 60%;
+    margin-left: 15em;
+    text-align: justify;
 }
