@@ -16,7 +16,7 @@
 
 header {
     text-align: center;
-    background-color:var(--darkgray);
+    background-image: linear-gradient(to right, white, var(--gray) 25%, var(--darkgray));
     height: 15vh;
     color: aliceblue;
 }
@@ -141,6 +141,34 @@ main{
 
 /* CATEGORIES */
 
+.categories{
+    height: 28em;
+    text-align: center;
+}
+
+.categories h2{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: var(--darkgray);
+}
+
+.categories article{
+    display: inline-block;
+    height: 18em;
+    width: 18em;
+    border: 1px solid var(--darkgray);
+    margin: 0 3em;
+}
+
+.categories img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.categories h3{
+    margin-top: 1em;
+}
 
 /* FOOTER */
 
