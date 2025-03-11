@@ -5,19 +5,25 @@
 }
 
 :root {
-    --darkgray:#333333;
-    --midgray:#444444; 
-    --gray:#5A5A5A;
-    --ligthgray:#CCCCCC;
-    --almostwhite:#eeeeee;
+    --darkgray:#181d1a;
+    --midgray:#3a4942; 
+    --gray:#4b6354;
+    --ligthgray:#bcccc3;
+    --almostwhite:#f6fffa;
+    --orangesport:#FB5B02;
+    --darkorangesport:#460800;
+    --greensport:#115A35;
+    --darkgreensport:#09311d;
+    --bluesport:#024CA3;
+    --darkbluesport:#001b3a;
 }
 
 /* HEADER */
 
 header {
     text-align: center;
-    background-image: linear-gradient(to right, white, var(--gray) 25%, var(--darkgray));
-    height: 15vh;
+    background-image: linear-gradient(to right, white, var(--orangesport) 25%);
+    height: 18vh;
     color: aliceblue;
 }
 
@@ -33,16 +39,19 @@ header {
 }
 
 .logo_tittle_container h1 {
+    -webkit-text-stroke: 0.01em var(--darkorangesport);
     display: inline-block;
     margin-top: 1rem;
-    color:aliceblue;
+    color:var(--almostwhite);
+    font-size: 3em;
     font-style: oblique;
     text-transform: uppercase;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 nav {
     height: 30%;
-    background-color: var(--midgray);
+    background-image: linear-gradient(to bottom, var(--darkgreensport)80%,var(--greensport));
 }
 
 nav ul{
@@ -58,6 +67,7 @@ nav ul li {
 a{
     color:aliceblue;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav a:hover{
@@ -67,12 +77,13 @@ nav a:hover{
 /* MAIN INDEX*/
 
 main{
-
+    background-image: url("../images/light-isometric-geometric-background.jpg");
 }
 /* BANNER INDEX*/
 
 .banner{
-    background-color: var(--gray);
+    background-color: var(--greensport);
+    background-image: linear-gradient(to bottom, var(--greensport)93%,var(--ligthgray));
     color: aliceblue;   
     height: 10em;
     text-align: center;
@@ -131,7 +142,7 @@ main{
 .product_card a{
     padding: 0.5em;
     width: 30%;
-    background-color: var(--darkgray);
+    background-color: var(--darkbluesport);
     color:aliceblue;
     margin-top: 0.5em;
     margin-left: 8em;
@@ -174,7 +185,7 @@ main{
 /* FOOTER*/
 
 footer {
-    background-color: var(--midgray);
+    background-color: var(--darkbluesport);
     color: aliceblue;
     text-align: center;
     height: 10vh;
@@ -187,11 +198,10 @@ footer p{
 /*ABOUT US SECTION*/
 
 .about_us{
-    border-bottom: 1px solid var(--ligthgray);
-    height: 28rem;
+    height: 20rem;
     width: 90%;
     text-align: center;
-    margin-top: 2em;
+    padding-top: 1em;
     margin-left: 4em;
     color: var(--darkgray);
 }
@@ -212,23 +222,23 @@ footer p{
 
 .team{
     margin-top:3em;
-    margin-left: 4em;
-    width: 90%;
+    width: 100%;
     color: var(--darkgray);
     text-align: center;
-    height: 35em;
-    border-bottom: 1px solid var(--ligthgray);
+    height: 37em;
+    background-color: var(--ligthgray);
+    
 }
 
 .team h2{
-    margin: 1em;
+    padding: 1em;
 }
 
 .team_member_container{
     display: inline-block;
     width: 22em;
     height: 30em;
-    margin: 1em;
+    margin: 2em;
 }
 
 .team_member_container h3{
