@@ -103,63 +103,83 @@ main{
 
 /* PRODUCTS */
 
-.featured_products{
+.featured_products {
     text-align: center;
     color: var(--darkgray);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.featured_products h2{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 5em;
+    align-items: center;
+    padding: 2em 0;
 }
 
-.products_container{   
+.featured_products h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.products_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /* 🔥 clave para igualar alturas */
     gap: 2em;
+    padding: 2em;
 }
 
-.product_card{
+.product_card {
+    flex: 1 1 18em; /* 🔧 ancho base adaptable */
     max-width: 25em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* 🧩 mejor distribución vertical */
     align-items: center;
-    justify-content: space-evenly;
     gap: 1em;
-    padding: 1em;
+    padding: 1.5em;
+    border-radius: 0.5em;
     border: 0.5px solid var(--ligthgray);
     background-color: var(--almostwhite);
+    min-height: 30em; /* 🧱 altura mínima uniforme */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
 }
 
-.product_card img{
-    border: 1px solid var(--almostwhite);
+.product_card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid var(--ligthgray);
 }
 
-.product_card p{
+.product_card p {
     color: var(--gray);
+    text-align: center;
+    min-height: 3em;
 }
 
-.product_card_price{
-    font-size: 1.2em;
+.product_card_price {
+    font-size: 1.3em;
     font-weight: bold;
-    color: var(--darkgray) !important;
 }
 
-.product_card a{
-    width: 30%;
-    font-size:1em;
-    padding: 0.2em;
-    background-color: var(--darkbluesport);
-    color:aliceblue;
+.product_card_price span{
+    color:var(--greensport);
 }
-.product_card a:hover{
-    background-color: var(--gray);
+.product_card a {
+    text-align: center;
+    width: 50%;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    background-color: var(--darkbluesport);
+    color: aliceblue;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product_card a:hover {
+    background-color:var(--gray)
 }
 
 /* CATEGORIES */
@@ -296,4 +316,88 @@ footer p{
     flex-direction: column;
     align-items: center;
     gap: 1em;
+}
+
+/*PRODUCT PAGE*/
+/* LIST CATEGORIES SECTION */
+
+.list_categories_section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 25%;
+    padding: 2em 2em;
+}
+
+.list_categories_section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    list-style-type: square;
+    padding-left: 1em;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.list_categories_section li{
+    width:max-content;
+}
+
+.list_categories_section h3 {
+    margin-bottom: 0.5em;
+    color: var(--darkgray);
+    font-size: 1.2em;
+}
+
+.list_categories_section h2{
+    color: var(--darkgray);
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+/* PRODUCTS CONTAINER (mejorado para adaptarse mejor al diseño) */
+
+.products_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+
+/* TABLE CONTAINER */
+
+.table_container {
+    margin: 2em;
+    background-color: var(--almostwhite);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+.table_container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    color: var(--darkgray);
+}
+
+.table_container th,
+.table_container td {
+    padding: 0.8em;
+    border-bottom: 1px solid var(--ligthgray);
+}
+
+.table_container th {
+    background-color: var(--greensport);
+    color: var(--almostwhite);
+    text-transform: uppercase;
+}
+
+.central_section{
+    display: flex;
 }
