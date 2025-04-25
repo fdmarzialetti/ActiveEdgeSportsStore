@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Active Edge Sports</title>
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo_tittle_container">
+            <img src="../assets/images/logo.png" alt="Active Edge Sports Logo" width="10%"> 
+            <h1>Active Edge Sports</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner" class="banner">
+            <h2>We're Just a Message Away</h2>
+            <p>Unleash Your Passion – We're Ready to Back You Up!</p>
+        </section>
+        <section class="contact_section">
+            <h2>Contact</h2>
+            <div class="contact_container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6193.342181088765!2d-67.08064570263792!3d-39.09118903277399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95e2199116114181%3A0xa009ab84f383fa79!2sIndio%20Comahue!5e0!3m2!1ses!2sar!4v1745597737524!5m2!1ses!2sar"></iframe>
+                <form class="contact_form" action="https://aulamindhub.github.io/dwm_show_data/show_data.html" method="get" target="_blank">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <p>Interested categories:</p>
+                    <div class="checkbox_group">
+                        <label><input type="checkbox" name="categories" value="Footwear"> Footwear</label>
+                        <label><input type="checkbox" name="categories" value="Fitness Equipment"> Fitness Equipment</label>
+                        <label><input type="checkbox" name="categories" value="Accessories"> Accessories</label>
+                        <label><input type="checkbox" name="categories" value="Outdoor Gear"> Outdoor Gear</label>
+                        <label><input type="checkbox" name="categories" value="Apparel"> Apparel</label>
+                        <label><input type="checkbox" name="categories" value="Nutrition"> Nutrition</label>
+                    </div>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <div class="radio_container">
+                        <p>I want to subscribe:</p>
+                        <label><input type="radio" name="subscribe" value="yes" checked> Yes</label>
+                        <label><input type="radio" name="subscribe" value="no"> No</label> 
+                    </div>
+                    <div class="form_buttons">
+                        <button type="submit" class="submit">Send</button>
+                        <button type="reset" class="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fernando Marzialetti - All rights reserved</p>
+    </footer>
+
+</body>
+</html>
